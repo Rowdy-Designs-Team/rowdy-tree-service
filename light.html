@@ -11,7 +11,8 @@
 html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--text);font-family:'Lato',sans-serif;font-weight:300;overflow-x:hidden;}
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.1rem 7vw;display:flex;justify-content:space-between;align-items:center;background:rgba(248,250,252,0.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
-.nav-brand{font-family:'Merriweather',serif;font-size:26px;letter-spacing:3px;color:var(--text);text-decoration:none;}
+.nav-brand{font-family:'Merriweather',serif;font-size:26px;letter-spacing:3px;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:.65rem;}
+.nav-brand img{height:40px;width:auto;object-fit:contain;}
 .nav-brand em{color:var(--acc);font-style:normal;}
 .nav-links{display:flex;gap:2.5rem;list-style:none;}
 .nav-links a{font-family:'Lato',sans-serif;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:rgba(15,23,42,0.42);text-decoration:none;transition:color .2s;}
@@ -109,7 +110,7 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:4rem 7
 </head>
 <body>
 <nav>
-  <a class="nav-brand" href="#"><em>Rowdy</em> Tree Service</a>
+  <a class="nav-brand" href="#"><img src="logo/logo.png" alt="Rowdy Tree Service"><em>Rowdy</em> Tree Service</a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#before-after">Our Work</a></li>
@@ -153,12 +154,12 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:4rem 7
 <section id="services" class="sec">
   <div class="reveal"><p class="sec-label">What We Do</p><h2 class="sec-title">Services &amp;<br>Specialties</h2></div>
   <div class="services-list">
-    <div class="svc-item reveal d1"><div class="svc-icon"><img src="services/Tree%20removal%20.PNG" alt=""></div><div class="svc-info"><div class="svc-name">Tree Removal</div><p class="svc-desc">Full tree removal from base to tip. Clean site left behind — no mess, no stumps.</p><div class="svc-price">Free Quote</div></div></div>
-    <div class="svc-item reveal d2"><div class="svc-icon"><img src="services/Stump%20grinding%20.PNG" alt=""></div><div class="svc-info"><div class="svc-name">Stump Grinding</div><p class="svc-desc">Grind stumps below grade and reclaim your yard. No more tripping hazards or eyesores.</p><div class="svc-price">$75+</div></div></div>
-    <div class="svc-item reveal d3"><div class="svc-icon"><img src="services/Tree%20trimming%20and%20pruning%20.PNG" alt=""></div><div class="svc-info"><div class="svc-name">Tree Trimming &amp; Pruning</div><p class="svc-desc">Shape, deadwood removal, crown reduction — keeps trees healthy and property safe.</p><div class="svc-price">Free Quote</div></div></div>
-    <div class="svc-item reveal d1"><div class="svc-icon"><img src="services/Storm%20clean%20up.PNG" alt=""></div><div class="svc-info"><div class="svc-name">Storm Cleanup</div><p class="svc-desc">24/7 emergency response for downed trees and storm-damaged limbs. We move fast.</p><div class="svc-price">Call Now</div></div></div>
-    <div class="svc-item reveal d2"><div class="svc-icon"><img src="services/Tree%20health%20assessment%20.PNG" alt=""></div><div class="svc-info"><div class="svc-name">Tree Health Assessment</div><p class="svc-desc">Disease identification, treatment plans, and prevention — keep the trees you want to keep.</p><div class="svc-price">Free</div></div></div>
-    <div class="svc-item reveal d3"><div class="svc-icon"><img src="services/Land%20clearing%20.PNG" alt=""></div><div class="svc-info"><div class="svc-name">Land Clearing</div><p class="svc-desc">Lot clearing for new builds, fence lines, driveways. Trees, stumps, brush — all of it gone.</p><div class="svc-price">Free Quote</div></div></div>
+    <div class="svc-item reveal d1"><div class="svc-icon"><img src="services/Tree%20removal.png" alt=""></div><div class="svc-info"><div class="svc-name">Tree Removal</div><p class="svc-desc">Full tree removal from base to tip. Clean site left behind — no mess, no stumps.</p><div class="svc-price">Free Quote</div></div></div>
+    <div class="svc-item reveal d2"><div class="svc-icon"><img src="services/Stump%20grinding.png" alt=""></div><div class="svc-info"><div class="svc-name">Stump Grinding</div><p class="svc-desc">Grind stumps below grade and reclaim your yard. No more tripping hazards or eyesores.</p><div class="svc-price">$75+</div></div></div>
+    <div class="svc-item reveal d3"><div class="svc-icon"><img src="services/Tree%20trimming%20and%20pruning.png" alt=""></div><div class="svc-info"><div class="svc-name">Tree Trimming &amp; Pruning</div><p class="svc-desc">Shape, deadwood removal, crown reduction — keeps trees healthy and property safe.</p><div class="svc-price">Free Quote</div></div></div>
+    <div class="svc-item reveal d1"><div class="svc-icon"><img src="services/Storm%20Clean%20Up.png" alt=""></div><div class="svc-info"><div class="svc-name">Storm Cleanup</div><p class="svc-desc">24/7 emergency response for downed trees and storm-damaged limbs. We move fast.</p><div class="svc-price">Call Now</div></div></div>
+    <div class="svc-item reveal d2"><div class="svc-icon"><img src="services/Tree%20health%20assessment.png" alt=""></div><div class="svc-info"><div class="svc-name">Tree Health Assessment</div><p class="svc-desc">Disease identification, treatment plans, and prevention — keep the trees you want to keep.</p><div class="svc-price">Free</div></div></div>
+    <div class="svc-item reveal d3"><div class="svc-icon"><img src="services/Land%20clearing.png" alt=""></div><div class="svc-info"><div class="svc-name">Land Clearing</div><p class="svc-desc">Lot clearing for new builds, fence lines, driveways. Trees, stumps, brush — all of it gone.</p><div class="svc-price">Free Quote</div></div></div>
   </div>
 </section>
 
@@ -254,12 +255,12 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:4rem 7
       </div>
       <div class="owners-row">
         <div class="owner-card">
-          <img class="owner-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&crop=face" alt="Owner">
+          <img class="owner-img" src="owners/owner.png" alt="Owner">
           <div class="owner-label">Owner</div>
           <div class="owner-name">Your Name</div>
         </div>
         <div class="owner-card">
-          <img class="owner-img" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop&crop=face" alt="Co-Owner">
+          <img class="owner-img" src="owners/co-owner.png" alt="Co-Owner">
           <div class="owner-label">Co-Owner</div>
           <div class="owner-name">Your Name</div>
         </div>
@@ -284,10 +285,10 @@ footer{background:var(--panel);border-top:1px solid var(--border);padding:4rem 7
   <div class="footer-top" style="align-items:center;padding-bottom:2.5rem;">
     <div class="footer-brand"><em>Rowdy</em> Tree Service<small>LICENSED &amp; INSURED</small></div>
     <div style="display:flex;align-items:center;gap:1.25rem;">
-      <a href="#" style="display:flex;transition:opacity .2s;" onmouseenter="this.style.opacity='.55'" onmouseleave="this.style.opacity='1'"><img src="contact/Phone.PNG" alt="Phone" style="width:50px;height:50px;object-fit:contain;"></a>
-      <a href="#" style="display:flex;transition:opacity .2s;" onmouseenter="this.style.opacity='.55'" onmouseleave="this.style.opacity='1'"><img src="contact/Email.PNG" alt="Email" style="width:50px;height:50px;object-fit:contain;"></a>
-      <a href="#" style="display:flex;transition:opacity .2s;" onmouseenter="this.style.opacity='.55'" onmouseleave="this.style.opacity='1'"><img src="contact/Facebook.PNG" alt="Facebook" style="width:50px;height:50px;object-fit:contain;"></a>
-      <a href="#" style="display:flex;transition:opacity .2s;" onmouseenter="this.style.opacity='.55'" onmouseleave="this.style.opacity='1'"><img src="contact/Location.PNG" alt="Location" style="width:50px;height:50px;object-fit:contain;"></a>
+      <a href="#" style="display:flex;transition:opacity .2s;" onmouseenter="this.style.opacity='.55'" onmouseleave="this.style.opacity='1'"><img src="contact/Phone.png" alt="Phone" style="width:50px;height:50px;object-fit:contain;"></a>
+      <a href="#" style="display:flex;transition:opacity .2s;" onmouseenter="this.style.opacity='.55'" onmouseleave="this.style.opacity='1'"><img src="contact/Email.png" alt="Email" style="width:50px;height:50px;object-fit:contain;"></a>
+      <a href="#" style="display:flex;transition:opacity .2s;" onmouseenter="this.style.opacity='.55'" onmouseleave="this.style.opacity='1'"><img src="contact/Facebook.png" alt="Facebook" style="width:50px;height:50px;object-fit:contain;"></a>
+      <a href="#" style="display:flex;transition:opacity .2s;" onmouseenter="this.style.opacity='.55'" onmouseleave="this.style.opacity='1'"><img src="contact/Location.png" alt="Location" style="width:50px;height:50px;object-fit:contain;"></a>
     </div>
     <div style="text-align:right;">
       <p style="font-size:11px;color:rgba(232,232,232,0.28);letter-spacing:2px;margin-bottom:.4rem;">&copy; 2026 Rowdy Tree Service. All rights reserved.</p>
